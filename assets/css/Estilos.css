@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'open sans';
+    font-size: 16px;
+}
+
+.logo-nav-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+}
+.logo img {
+    width: 150px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .navegacion ul li {
+        display: inline-block;
+    }
+        .navegacion ul li a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition:  all 0.4s linear;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: sans-serif;
+            color: #000;
+        }
+        .navegacion ul li a.Cerrar {
+                    display: none;
+                    cursor: pointer;
+                }
+        .navegacion ul li a:hover {
+            color: #ff0000;
+            transition: all .5s;
+        }
+
+header {
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/Libreria3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    -webkit-filter: blur(2px);
+}
+
+header .textos {
+    margin-top: 152px;
+}
+
+header .titulo {
+    font-size: 85px;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+header .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 35vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+/* Main */
+
+.sobre-nosotros {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+.acerca-de .boton {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid rgba(24, 16, 16, .7);
+    color: rgb(24, 16, 16);
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+}
+
+.galeria {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.imagenes {
+    width: 20%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.encima {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 73, 94, 0.815);
+}
+
+.encima h2 {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    color: #fff;
+}
+
+.encima div {
+    position: relative;
+    display: block;
+    top: 46%;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    margin: auto;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin: 10px 5px;
+    width: 20%;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0 rgba(52, 73, 94, 0.849);
+    border-radius: 30px;
+    margin-bottom: 200px;
+    padding-top: 30px;
+}
+
+.cards img {
+    width: 130px;
+    height: 130px;
+}
+
+.fondo {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 130px;
+}
+
+.sesgoabajo-unico {
+    z-index: 10;
+    position: absolute;
+    bottom: 1;
+    left: 1;
+}
+
+.titulo-patrocinadores,
+.subtitulo-patrocinadores {
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores {
+    font-size: 56px;
+    margin-top: 48px;
+}
+
+.subtitulo-patrocinadores {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 64px;
+}
+
+.clientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cliente {
+    width: 30%;
+}
+
+.cliente img {
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background: #2c3e50;
+    height: auto;
+    align-content: center;
+    position: static;
+}
+
+.titulo-footer,
+.subtitulo-footer {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subtitulo-footer {
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type = "text"],
+input[type = "email"],
+input[type = "password"],
+input[type = "date"] {
+    display: inline-block;
+    width: 48%;
+    padding: 15px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 15px;
+    border-top: 5px solid rgba(95, 95, 95, 0.7);
+}
+
+input[type = "text"]:focus,
+input[type = "email"]:focus,
+input[type = "password"]:focus,
+input[type = "date"]:focus,
+textarea:focus {
+    border-top: 5px solid rgba(40, 198, 94, 0.77);
+}
+
+
+input[type = "search"] {
+    display: inline-block;
+    width: 95%;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 5px;
+    border-top: 5px solid rgba(95, 95, 95, 0.7);
+}
+
+input[type = "search"]:focus {
+    border-top: 5px solid rgba(40, 198, 94, 0.77);
+}
+
+
+select {
+    display: inline-block;
+    width: 100%;
+    padding: 13px;
+    border: none;
+    color: #ffffff;
+    font-family: 'open sans';
+    background: rgba(37, 37, 33, .7);
+    margin-bottom: 5px;
+    border-top: 5px solid rgba(95, 95, 95, 0.7);
+}
+
+select:focus {
+    border-top: 5px solid rgba(40, 198, 94, 0.77);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background: rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: rgba(66, 162, 118, 0.7);
+    width: 100px;
+}
+
+
+.main-container {
+    margin: 100px 500px auto;
+    width: 600px;
+    
+}
+
+.containertabledb {
+    align-content: center;
+    margin-left: -100px;
+    margin-top: 50px;
+    margin-bottom: -100px;
+    width: 660px;
+    
+}
+
+table {
+    width: 150%;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 550px ;
+    
+}
+
+th, td {
+    padding: 10px;
+}
+
+
+thead {
+    background-color: #2c3e50;
+    border-bottom:  solid 5px #405d7b;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(165, 165, 165, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+/* MEDIANA SCREEN */
+@media screen and (max-width:900px) {
+    .card {
+        width: 20%;
+        height: 200px;
+        padding: 15px auto;
+        margin: 20px 10px;
+    }
+    
+    .cards img {
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+
+
+/* PEQUEÑA SCREEN */
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    header .titulo {
+        font-size: 75px;
+    }
+
+    .none {
+        display: none
+    }
+
+    .imagenes {
+        flex-grow: 1;
+    }
+
+    .card {
+        width: 70%;
+        height: 30%;
+    }
+    
+    .cards img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fondo {
+        height: auto;
+    }
+
+    .especial {
+        display: none;
+    }
+
+    .cliente {
+        width: 90%;
+        height: 200px;
+        margin-bottom: 200px;
+    }
+    
+    table {
+        width: 20%;
+        text-align: center;
+        margin: -100px;
+    }
+}
+
+
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+
+    header .titulo {
+        font-size: 65px;
+    }
+
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .sobre-nosotros {
+        font-size: 46px;
+    }
+
+    .slogan {
+        font-size: 20px;
+    }
+
+    .titulo-patrocinadores {
+        font-size: 46px;
+    }
+
+    .subtitulo-patrocinadores {
+        font-size: 20px;
+    }
+    footer {
+        margin-bottom: 300px;
+    }
+}
+
+@media only screen and (max-width: 833px){
+    
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+}
+    
+    .navegacion{
+        width: 100%;
+        margin-top: 1rem;
+    }
+        .navegacion ul{
+            display: none;
+        }
+        .navegacion ul.show{
+            display: block;
+        }
+        .navegacion ul li a.Cerrar{
+                    display: block;
+                    cursor: pointer;
+                }
+        .navegacion ul li{
+        display: block;
+        padding: 0.5rem 0
+        }
+}
